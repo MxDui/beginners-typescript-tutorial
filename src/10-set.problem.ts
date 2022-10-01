@@ -17,7 +17,7 @@ it("Should give a type error when you try to pass a non-string", () => {
 });
 
 it("Should be typed as an array of strings", () => {
-  const guitaristsAsArray = Array.from(guitarists);
+  const guitaristsAsArray = Array.from(guitarists) as string[];
 
   type tests = [Expect<Equal<typeof guitaristsAsArray, string[]>>];
 });
